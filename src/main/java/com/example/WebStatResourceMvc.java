@@ -36,7 +36,7 @@ public class WebStatResourceMvc {
     public void getSomething(HttpServletResponse response) throws SQLException, IOException {
         logger.info("new Request came to Get All!");
         PrintWriter writer = response.getWriter();
-        webStatDao.getStreamingOutputForSql("SELECT * FROM default.web_logs", new Object[]{}, writer);
+        webStatDao.getStreamingOutputForSql("SELECT * FROM default.test", new Object[]{}, writer);
     }
 
     /*@GetMapping("/getByDomain/{domain}")

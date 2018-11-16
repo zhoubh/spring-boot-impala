@@ -41,14 +41,15 @@ public class AppConfig {
     @Bean
     public DataSource dataSource() throws IOException {
         System.setProperty("javax.security.auth.useSubjectCredsOnly", "true");
-        System.setProperty("java.security.krb5.conf", "/Users/amarendra/IdeaProjects/spring-boot-impala/src/main/resources/krb5.conf");
-        System.setProperty("java.security.auth.login.config","/Users/amarendra/IdeaProjects/spring-boot-impala/src/main/resources/jaas.conf");
+        //System.setProperty("java.security.krb5.conf", "/Users/amarendra/IdeaProjects/spring-boot-impala/src/main/resources/krb5.conf");
+        System.setProperty("java.security.krb5.conf", "D:\\kerberos\\krb5.conf");
+        System.setProperty("java.security.auth.login.config","D:\\kerberos\\jaas.conf");
         //System.setProperty("java.security.krb5.conf", krb5Location);
         //System.setProperty("java.security.auth.login.config", jaasLocation);
         org.apache.hadoop.conf.Configuration conf = new org.apache.hadoop.conf.Configuration();
         conf.set("hadoop.security.authentication", "kerberos");
         UserGroupInformation.setConfiguration(conf);
-        UserGroupInformation.loginUserFromKeytab("impala/quickstart.cloudera@CLOUDERA", "/Users/amarendra/IdeaProjects/spring-boot-impala/src/main/resources/impala.keytab");
+        UserGroupInformation.loginUserFromKeytab("zhoubh@CREATIVEARTS.CN", "D:\\kerberos\\zhoubh.keytab");
         //UserGroupInformation.loginUserFromKeytab(priniciple, keyTabLocation);
 
 

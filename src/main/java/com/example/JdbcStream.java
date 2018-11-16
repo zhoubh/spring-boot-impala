@@ -94,7 +94,7 @@ public class JdbcStream extends JdbcTemplate {
             return StreamSupport.stream(supplier, Spliterator.IMMUTABLE, false);
         }
 
-        ;
+
 
         @Override
         public void close() {

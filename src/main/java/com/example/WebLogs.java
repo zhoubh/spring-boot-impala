@@ -10,9 +10,6 @@ import java.util.Date;
 public class WebLogs {
     private String  host;
     private String  domain;
-
-
-
     private Date date;
     private String  feature;
     private int  core;

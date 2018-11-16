@@ -36,17 +36,17 @@ public class WebStatResourceMvc {
     public void getSomething(HttpServletResponse response) throws SQLException, IOException {
         logger.info("new Request came to Get All!");
         PrintWriter writer = response.getWriter();
-        webStatDao.getStreamingOutputForSql("SELECT * FROM default.test", new Object[]{}, writer);
+        webStatDao.getStreamingOutputForSql("SELECT * FROM default.WebLog", new Object[]{}, writer);
     }
 
-    /*@GetMapping("/getByDomain/{domain}")
+  @GetMapping("/getByCity/{city}")
     @ResponseBody
-    public void getByDomain(@PathVariable String domain, HttpServletResponse response) throws SQLException, IOException {
-        logger.info("new Request came to getByDomain!");
+    public void getByDomain(@PathVariable String city, HttpServletResponse response) throws SQLException, IOException {
+        logger.info("new Request came to getByCity!");
         PrintWriter writer = response.getWriter();
-        webStatDao.getStreamingOutputForSql("SELECT * FROM WEB_STAT where DOM = ?", new Object[]{domain}, writer);
+        webStatDao.getStreamingOutputForSql("SELECT * FROM WebLog where city = ?", new Object[]{city}, writer);
     }
-
+  /*
     @GetMapping("//getByHost/{host}")
     @ResponseBody
     public void getByHost(@PathVariable String host,  HttpServletResponse response) throws SQLException, IOException {

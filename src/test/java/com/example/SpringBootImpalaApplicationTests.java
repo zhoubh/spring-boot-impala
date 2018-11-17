@@ -13,15 +13,21 @@ public class SpringBootImpalaApplicationTests {
 
 	@Autowired
 	WebStatGenerator webStatGenerator;
+	@Autowired
+	UpdateStat updateStat;
 
 	@Test
 	public void contextLoads() {
 
 	}
 
-	@Test
-	public void loadData(){
-		webStatGenerator.generateData(webStatGenerator);
-	}
+	//@Test
+	//public void loadData(){
+//		webStatGenerator.generateData(webStatGenerator);
+//	}
 
+	@Test
+	public void updateData(){
+		updateStat.UpdateData("456789");
+	}
 }

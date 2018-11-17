@@ -28,6 +28,6 @@ public class SpringBootImpalaApplicationTests {
 
 	@Test
 	public void updateData(){
-		updateStat.UpdateData("456789");
+		updateStat.UpdateData("123456");
 	}
 }

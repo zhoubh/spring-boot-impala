@@ -1,9 +1,5 @@
 package com.example;
 
-
-
-
-
 import com.cloudera.jdbc.jdbc41.S41ForwardResultSet;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;

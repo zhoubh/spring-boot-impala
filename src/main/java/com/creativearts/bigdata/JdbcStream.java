@@ -1,4 +1,4 @@
-package com.example;
+package com.creativearts.bigdata;
 
 import com.cloudera.jdbc.jdbc41.S41ForwardResultSet;
 import org.springframework.beans.factory.annotation.Autowired;

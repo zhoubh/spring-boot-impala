@@ -1,4 +1,4 @@
-package com.example;
+package com.creativearts.bigdata;
 
 import com.cloudera.impala.jdbc41.DataSource;
 import org.apache.hadoop.security.UserGroupInformation;

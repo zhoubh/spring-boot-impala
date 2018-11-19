@@ -1,4 +1,4 @@
-package com.example;
+package com.creativearts.bigdata;
 
 import com.cloudera.dsi.dataengine.utilities.TimestampTz;
 import org.fluttercode.datafactory.impl.DataFactory;
@@ -8,7 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 
-import java.io.IOException;
 import java.time.Instant;
 import java.util.Date;
 import java.util.Random;

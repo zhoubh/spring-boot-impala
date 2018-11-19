@@ -1,7 +1,4 @@
-package com.example;
-
-import java.sql.Date;
-import java.sql.Timestamp;
+package com.creativearts.bigdata;
 
 /**
  * Created by amarendra on 14/04/17.

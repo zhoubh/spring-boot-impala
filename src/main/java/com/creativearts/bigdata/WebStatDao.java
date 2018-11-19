@@ -1,4 +1,4 @@
-package com.example;
+package com.creativearts.bigdata;
 
 import com.google.gson.Gson;
 import org.springframework.beans.factory.annotation.Autowired;
